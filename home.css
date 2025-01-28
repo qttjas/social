@@ -1,0 +1,178 @@
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    line-height: 72px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+img {
+    width: 260px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#big-neon {
+    float:center;
+    display:inline;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -5px 0px 0 #25F4EE, 5px 0px 0 #FE2C55;
+}
+
+a {
+    text-decoration: none;
+    opacity: 100%;
+}
+
+#enter-btn {
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px;
+    font-size: 50px;
+    opacity: 90%;
+}
+#start {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(0, 0, 0);
+    opacity: 100%;
+}
+/*header*/
+#header {
+    height: 50px;
+    width: auto;
+    background-color:rgb(255, 255, 255);
+    opacity: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+#logo {
+    height: 35px;
+    width: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    float:left;
+    display: inline;
+}
+#home {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    float:left;
+    display:inline;
+    font-size: 22px;
+    color: black;
+    font-stretch: extra-expanded;
+    line-height: 16px;
+}
+#neon {
+    margin: 10px;
+    float:center;
+    display:inline;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -1px 0px 0 #25F4EE, 1px 0px 0 #FE2C55;
+}
+#question {
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 7px;
+    padding: 0px;
+    float: right;
+    display:inline;
+    position: relative;
+    filter: brightness(150%); 
+}
+#help {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    float:right;
+    display:inline;
+    position: relative;
+    line-height: 11px;
+    word-spacing: 1px;
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
+
+/*footer*/
+#w-footer {
+    position: relative;
+    height: 64px;
+    width: auto;
+    background-color:rgb(255, 255, 255);
+    opacity: 80%;
+}
+#b-footer {
+    position: relative;
+    height: 84px;
+    width: auto;
+    background-color:rgb(0, 0, 0);
+    opacity: 100%;
+}
+#box {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 30%;
+    background-color:rgb(0, 0, 0);
+    opacity: 100%;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+/*CD: 3schools*/
+.goog-logo-link,.goog-te-gadget span{
+    display:none !important;
+}
+.goog-te-gadget{
+    color:transparent!important;
+    font-size :0;
+}
+/*CD: 3schools*/
+#trademark {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 130px;
+    display: inline;
+    float: right;
+    position: relative;
+    line-height: 11px;
+    word-spacing: 1px;
+    font-size: 14px;
+    color: rgb(105, 105, 105);
+}
