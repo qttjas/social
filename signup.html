@@ -1,48 +1,56 @@
 <!DOCTYPE html>
+<html lang="en">
 <html>
+
     <head>
-        <title>Sign up | TikTok TikTok </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <title>Tiktok Tiktok</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&family=Calistoga&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="signup.css">
-        <link rel="icon" href="ss.png">
+		<link rel="stylesheet" href="signup.css">
     </head>
-    <body>
-        <div id="header">
-            <img id="logo" src="ss.png">
-            <a id="home" href="home.html" target="_self">TikT<p id="neon">o</p>k<br />TikT<p id="neon">o</p>k</a>
-            <a id="help" href="https://www.findhelp.org/" target="_blank"><br />Feedback and help</a>
-            <img id="question" src="help.png">
-        </div>
-        <p id="login-text">Sign up for TikTok TikTok</p>
-        <p id="purpose-text">Create a profile, follow other accounts, make<br /> your own videos, and more.</p>
 
-        <p id="policy-text">By continuing, you agree to TikTok Tiktok’s <a id="service" href="login.html" target="_blank">Terms of Service</a> and<br /> confirm that you have read TikTok Tiktok’s <a id="policy" href="login.html" target="_blank">Privacy Policy</a>.</p>
-        <script src="login.js" type="module"></script>
+    <body>
+        <section id="logged-out-view">
+            <div class="container">
+                <h1 class="app-title">LOG IN!</h1>
+                <p id="purpose-text">Manage your account, check notifications,<br /> comment on videos, and more.</p>
+                <div class="provider-buttons">
+                    <button id="sign-in-with-google-btn" class="provider-btn">
+                        <img src="google.png" class="google-btn-logo">
+                        Sign in with Google
+                    </button>
+                </div>
+
+                <div class="auth-fields-and-buttons">
+                    <input id="email-input" type="email" placeholder="Email">
+                    <input id="password-input" type="password" placeholder="Password">
+                    
+                    <button id="sign-in-btn" class="primary-btn">Sign in</button>
+                    <button id="create-account-btn" class="secondary-btn">Create Account</button>
+                </div>
+                <p id="policy-text">By continuing, you agree to TikTok Tiktok’s <a id="service" href="login.html" target="_blank">Terms of Service</a> and<br /> confirm that you have read TikTok Tiktok’s <a id="policy" href="login.html" target="_blank">Privacy Policy</a>.</p>
+            </div>
+        </section>
+        
+        <section id="logged-in-view">
+            <div class="container">
+                <!-- log out button-->
+                <nav>
+                    <button id="sign-out-btn" class="icon-btn">
+                        <img src="assets/icons/logOut.jpg" class="icon-img-btn">
+                    </button>
+                </nav>
+
+                <div class="app-container">
+                    <div class="user-section">
+                        <img id="user-profile-picture">
+                        <h2 id="user-greeting"></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="signup.js" type="module"></script>
     </body>
-    <footer>
-        <div id="w-footer">
-            <p id="missing-text">Already have an account? <a id="signing-up" href="login.html" target="_blank">Log in</a></p>
-        </div>
-        <div id="b-footer">
-          <div id="box">
-            <!-- CD: 3schools -->
-            <div id='google_translate_element'></div>
-            <script>
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({
-              pageLanguage: 'en',
-              autoDisplay: 'true',
-              layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-              }, 'google_translate_element');
-            }
-            </script>
-            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-            <!-- CD: 3schools -->
-          </div>
-          <p id="trademark">© 2025 TikTok TikTok</p>
-        </div>
-    </footer>
 </html>
