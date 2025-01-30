@@ -64,7 +64,7 @@ a {
     float: right;
     display:inline;
     position: relative;
-    filter: brightness(150%); 
+    filter: grayscale(100%);
 }
 #help {
     margin-top: 10px;
@@ -111,7 +111,7 @@ a {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 14px;
-    padding: 25px;
+    padding: 10px;
     color: rgb(0, 0, 0);
 }
 #signing-up {
@@ -119,18 +119,20 @@ a {
 }
 /*footer*/
 #w-footer {
-    position: relative;
+    position: fixed;
     height: 64px;
-    width: auto;
+    width: 100%;
     background-color:rgb(255, 255, 255);
     opacity: 80%;
+    bottom: 84px;
 }
 #b-footer {
-    position: relative;
+    position: fixed;
     height: 84px;
-    width: auto;
+    width: 100%;
     background-color:rgb(0, 0, 0);
     opacity: 100%;
+    bottom: 0px;
 }
 #box {
     position: relative;

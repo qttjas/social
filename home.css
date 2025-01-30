@@ -110,7 +110,7 @@ a {
     float: right;
     display:inline;
     position: relative;
-    filter: brightness(150%); 
+    filter: grayscale(100%);
 }
 #help {
     margin-top: 10px;
