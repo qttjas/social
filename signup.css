@@ -2,18 +2,18 @@
     --primary-text-color: #000000;
     --secondary-text-color: #FE2C55;
     --tertiary-text-color: #25F4EE;
-    --secondary-light-color: #FFF6E8;
-    --post-color: #62EEA8;
-    --delete-color: #FF9F9F;
-    --light-color: #FFFEFC;
+    --primary-ui-color: #ffffff;
+    --secondary-ui-color: #000000;
+    --tertiary-ui-color: #696969;
+    --border-color: #cfcfcf;
     --grey-color: #747E79;
     --dark-color: #000000;
 
     --primary-font: 'Montserrat', sans-serif;
-    --seconday-font: 'Calistoga', sans-serif;
+    --seconday-font: 'Montserrat', sans-serif;
     
-    --border-width: 3px;
-    --element-border-radius: 5px;
+    --border-width: 2px;
+    --element-border-radius: 10px;
     
     --button-height: 5px;
     
@@ -24,7 +24,7 @@
     --maximum-width: 500px;
 }
 
-html, body {
+body {
     background-image: url("background.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -34,11 +34,125 @@ html, body {
     margin: 0px;
     padding: 0px;
 }
-
-body {
-    color: var(--dark-color);
-    background-color: var(--secondary-light-color);
-    font-family: var(--primary-font);
+a {
+    text-decoration: none;
+    opacity: 100%;
+}
+/*header*/
+#header {
+    height: 50px;
+    width: auto;
+    background-color:var(--primary-ui-color);
+    opacity: 80%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bold;
+}
+#logo {
+    height: 35px;
+    width: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 0px;
+    float:left;
+    display: inline;
+}
+#home {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    float:left;
+    display:inline;
+    font-size: 22px;
+    color: black;
+    font-stretch: extra-expanded;
+    line-height: 16px;
+}
+#neon {
+    margin: 10px;
+    float:center;
+    display:inline;
+    margin: 0px;
+    padding: 0px;
+    text-shadow: -1px 0px 0 var(--tertiary-text-color), 1px 0px 0 var(--secondary-text-color);
+}
+#question {
+    height: 20px;
+    width: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    margin-right: 7px;
+    padding: 0px;
+    float: right;
+    display:inline;
+    position: relative;
+    filter: grayscale(100%);
+}
+#help {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 10px;
+    float:right;
+    display:inline;
+    position: relative;
+    line-height: 11px;
+    word-spacing: 1px;
+    font-size: 14px;
+    color: var(--tertiary-ui-color);
+}
+/*footer*/
+#w-footer {
+    position: relative;
+    height: 64px;
+    width: auto;
+    background-color:var(--primary-ui-color);
+    opacity: 80%;
+}
+#b-footer {
+    position: relative;
+    height: 84px;
+    width: auto;
+    background-color:var(--secondary-ui-color);
+    opacity: 100%;
+}
+#box {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 30%;
+    background-color:var(--secondary-ui-color);
+    opacity: 100%;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+/*CD: 3schools*/
+.goog-logo-link,.goog-te-gadget span{
+    display:none !important;
+}
+.goog-te-gadget{
+    color:transparent!important;
+    font-size :0;
+}
+/*CD: 3schools*/
+#trademark {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 130px;
+    display: inline;
+    float: right;
+    position: relative;
+    line-height: 11px;
+    word-spacing: 1px;
+    font-size: 14px;
+    color: var(--tertiary-ui-color);
 }
 
 /* === Typography === */
@@ -52,18 +166,19 @@ h2 {
     font-family: var(--primary-font);
     font-size: 35px;
     text-align: center;
+    margin: 0;
 }
 
 /* === Sections === */
 
 section {
-    margin: 3em 0;
+    margin: 2em 0;
 }
 
 .auth-fields-and-buttons {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.75em;
 }
 
 * /*=== User Section === */
@@ -121,23 +236,27 @@ nav {
     display: flex;
     flex-direction: column;
     width: 100%;
+    opacity: 100%;
 }
 
 #logged-out-view .container {
-    gap: 2em;
+    gap: 1em;
 }
 
 /* === Common for elements === */
 
 input, button {
-    font-family: inherit;
+    font-family: var(--primary-font);
     padding: var(--element-padding);
     border-radius: var(--element-border-radius);
-    width: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
     font-size: 1.1em;
     text-align: center;
-    border: var(--border-width) solid var(--dark-color);
+    height: 45px;
+    border: var(--border-width) solid var(--border-color);
 }
 
 input:focus, button:focus {
@@ -157,23 +276,24 @@ input {
 }
 
 input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: var(--grey-color);
+    color: var(--tertiary-ui-color);
+    font-size: 15px;
     opacity: 1; /* Firefox */
 }
 
 input:-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: var(--grey-color);
+    color: var(--tertiary-ui-color);
 }
 
 input::-ms-input-placeholder { /* Microsoft Edge */
-    color: var(--grey-color);
+    color: var(--tertiary-ui-color);
 }
 
 /* === Buttons === */
 
 button {
     font-weight: 600;
-    width: 100%;
+    width: 70%;
     border:none;
 }
 
@@ -182,12 +302,15 @@ button:hover {
 }
 
 .primary-btn {
-    background-color: var(--primary-color);
-    box-shadow: 0px var(--button-height) 0px 0px var(--dark-color);
+    background-color: var(--secondary-text-color);
+    box-shadow: 0px var(--button-height) 0px 0px var(--secondary-ui-color);
+    color: var(--primary-text-color);
     position: relative;
 }
 
 .primary-btn:hover {
+    background-color: var(--secondary-ui-color);
+    color: var(--primary-ui-color);
     top: var(--button-height);
     box-shadow: none;
 }
@@ -198,19 +321,19 @@ button:hover {
 }
 
 .secondary-btn:hover {
-    color: var(--light-color);
-    background-color: var(--dark-color);
+    color: var(--tertiary-ui-color);
 }
 
 .provider-btn {
-    color: var(--dark-color);
-    background-color: var(--light-color);
+    color: var(--tertiary-ui-color);
+    background-color: var(--primary-ui-color);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5em;
     border: 0;
-    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, .25);
+    font-size: 15px;
+    box-shadow: 0px 3px 0px 0px var(--tertiary-ui-color);
 }
 
 .provider-btn:hover {
@@ -250,79 +373,23 @@ classes to make the sign out buttons work
 /*  credit:coursera */
 
 /* custom css stuff */
-#login-text {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bolder;
-    font-stretch: extra-condensed;
-    text-align: center;
-    font-size: 32px;
-}
 #purpose-text {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 14px;
-    color: rgb(0, 0, 0);
+    color: var(--primary-text-color);
 }
 #policy-text {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
-    margin-bottom: 75px;
+    margin-bottom: 8px;
     font-size: 12px;
-    color: rgb(0, 0, 0);
+    color: var(--primary-text-color);
 }
 #service {
-    color: #FE2C55;
+    color: var(--secondary-text-color);
 
 }
 #policy {
-    color: #FE2C55;
-}
-#w-footer {
-    position: relative;
-    height: 64px;
-    width: auto;
-    background-color:rgb(255, 255, 255);
-    opacity: 80%;
-}
-#b-footer {
-    position: relative;
-    height: 84px;
-    width: auto;
-    background-color:rgb(0, 0, 0);
-    opacity: 100%;
-}
-#box {
-    position: relative;
-    display: inline-block;
-    height: 20px;
-    width: 30%;
-    background-color:rgb(0, 0, 0);
-    opacity: 100%;
-    margin-left: 130px;
-    margin-top: 30px;
-}
-/*CD: 3schools*/
-.goog-logo-link,.goog-te-gadget span{
-    display:none !important;
-}
-.goog-te-gadget{
-    color:transparent!important;
-    font-size :0;
-}
-/*CD: 3schools*/
-#trademark {
-    font-family: 'Montserrat', sans-serif;
-    font-size: small;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 130px;
-    display: inline;
-    float: right;
-    position: relative;
-    line-height: 11px;
-    word-spacing: 1px;
-    font-size: 14px;
-    color: rgb(105, 105, 105);
+    color: var(--secondary-text-color);
 }

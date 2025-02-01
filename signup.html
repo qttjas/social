@@ -3,7 +3,7 @@
 <html>
 
     <head>
-        <title>Tiktok Tiktok</title>
+        <title>Log in | TikTok TikTok</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +12,20 @@
     </head>
 
     <body>
+        <div id="header">
+            <img id="logo" src="ss.png">
+            <a id="home" href="home.html" target="_self">TikT<p id="neon">o</p>k<br />TikT<p id="neon">o</p>k</a>
+            <a id="help" href="https://www.findhelp.org/" target="_blank"><br />Feedback and help</a>
+            <img id="question" src="help.png">
+          </div>
         <section id="logged-out-view">
             <div class="container">
-                <h1 class="app-title">LOG IN!</h1>
+                <h1 class="app-title">Log in to TikTok TikTok</h1>
                 <p id="purpose-text">Manage your account, check notifications,<br /> comment on videos, and more.</p>
                 <div class="provider-buttons">
                     <button id="sign-in-with-google-btn" class="provider-btn">
                         <img src="google.png" class="google-btn-logo">
-                        Sign in with Google
+                        Continue with Google
                     </button>
                 </div>
 
@@ -51,6 +57,25 @@
                 </div>
             </div>
         </section>
+        <div id="w-footer"></div>
+    <div id="b-footer">
+        <div id="box">
+        <!-- CD: 3schools -->
+        <div id='google_translate_element'></div>
+        <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            autoDisplay: 'true',
+            layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
+            }, 'google_translate_element');
+        }
+        </script>
+        <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+        <!-- CD: 3schools -->
+        </div>
+        <p id="trademark">© 2025 TikTok TikTok</p>
+    </div>
         <script src="signup.js" type="module"></script>
     </body>
 </html>
