@@ -6,8 +6,6 @@
     --secondary-ui-color: #000000;
     --tertiary-ui-color: #696969;
     --border-color: #cfcfcf;
-    --grey-color: #747E79;
-    --dark-color: #000000;
 
     --primary-font: 'Montserrat', sans-serif;
     --seconday-font: 'Montserrat', sans-serif;
@@ -104,56 +102,6 @@ a {
     font-size: 14px;
     color: var(--tertiary-ui-color);
 }
-/*footer*/
-#w-footer {
-    position: relative;
-    height: 64px;
-    width: auto;
-    background-color:var(--primary-ui-color);
-    opacity: 80%;
-}
-#b-footer {
-    position: relative;
-    height: 84px;
-    width: auto;
-    background-color:var(--secondary-ui-color);
-    opacity: 100%;
-}
-#box {
-    position: relative;
-    display: inline-block;
-    height: 20px;
-    width: 30%;
-    background-color:var(--secondary-ui-color);
-    opacity: 100%;
-    margin-left: 130px;
-    margin-top: 30px;
-}
-/*CD: 3schools*/
-.goog-logo-link,.goog-te-gadget span{
-    display:none !important;
-}
-.goog-te-gadget{
-    color:transparent!important;
-    font-size :0;
-}
-/*CD: 3schools*/
-#trademark {
-    font-family: 'Montserrat', sans-serif;
-    font-size: small;
-    font-weight: bold;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    margin-left: 0px;
-    margin-right: 130px;
-    display: inline;
-    float: right;
-    position: relative;
-    line-height: 11px;
-    word-spacing: 1px;
-    font-size: 14px;
-    color: var(--tertiary-ui-color);
-}
 
 /* === Typography === */
 
@@ -222,7 +170,7 @@ nav {
     width: 3.75em;
     height: 3.75em;
     border-radius: 100%;
-    border: var(--border-width) solid var(--dark-color);
+    border: var(--border-width) solid var(--secondary-ui-color);
 }
 
 .user-section h2 {
@@ -392,4 +340,55 @@ classes to make the sign out buttons work
 }
 #policy {
     color: var(--secondary-text-color);
+}
+
+/*footer*/
+#w-footer {
+    position: relative;
+    height: 64px;
+    width: auto;
+    background-color:var(--primary-ui-color);
+    opacity: 80%;
+}
+#b-footer {
+    position: relative;
+    height: 84px;
+    width: auto;
+    background-color:var(--secondary-ui-color);
+    opacity: 100%;
+}
+#box {
+    position: relative;
+    display: inline-block;
+    height: 20px;
+    width: 30%;
+    background-color:var(--secondary-ui-color);
+    opacity: 100%;
+    margin-left: 130px;
+    margin-top: 30px;
+}
+/*CD: 3schools*/
+.goog-logo-link,.goog-te-gadget span{
+    display:none !important;
+}
+.goog-te-gadget{
+    color:transparent!important;
+    font-size :0;
+}
+/*CD: 3schools*/
+#trademark {
+    font-family: 'Montserrat', sans-serif;
+    font-size: small;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 130px;
+    display: inline;
+    float: right;
+    position: relative;
+    line-height: 11px;
+    word-spacing: 1px;
+    font-size: 14px;
+    color: var(--tertiary-ui-color);
 }

@@ -7,6 +7,10 @@ body {
     border: 0px;
     margin: 0px;
     padding: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
 }
 a {
     text-decoration: none;
@@ -83,131 +87,141 @@ a {
 #main-page {
     position: relative;
     display: inline-block;
-    top: -5px;
     height: 538px;
     width: 100%;
+    top: -5px;
     margin: 0px;
     padding: 0px;
 }
-#side-bar {
+.side-bar {
     position: relative;
+    float: left;
     height: 538px;
     width: 15%;
     background-color:white;
     opacity: 90%;
 }
-#fy-box {
+#search-input {
+    display: inline-block;
+    margin: 10px;
+    padding-left: 10px;
+    width: 70%;
+    height: 35px;
+    border: 2px solid #cfcfcf;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+}
+.box {
     position: relative;
-    height: 40px;
+    height: 35px;
     width: auto;
-    opacity: 50%;
+    opacity: 60%;
+    padding-left: 20%;
+    padding-top: 12px;
+}
+.pages {
+    display: inline;
+    position: relative;
+    float: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    opacity: 100%;
+    color:white;
+}
+#fy-box {
     background-color: #ff0000;
 }
-#for-youA {
-    display: inline;
-    position: relative;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 100%;
-    color:white;
-}
 #ex-box {
-    height: 40px;
-    width: auto;
-    opacity: 50%;
     background-color: #ff7300;
 }
-#explore {
-    display: inline;
-    position: relative;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 100%;
-    color:white;
-}
 #fol-box {
-    height: 40px;
-    width: auto;
-    opacity: 50%;
     background-color: #ffee00;
 }
-#following {
-    display: inline;
-    position: relative;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 100%;
-    color:white;
-}
 #up-box {
-    height: 40px;
-    width: auto;
-    opacity: 50%;
     background-color: #00ff2a;
 }
-#upload {
-    display: inline;
-    position: relative;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 100%;
-    color:white;
-}
 #rec-box {
-    height: 40px;
-    width: auto;
-    opacity: 50%;
     background-color: #006eff;
 }
-#live {
-    display: inline;
-    position: relative;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 100%;
-    color:white;
-}
 #pro-box {
-    height: 40px;
-    width: auto;
-    opacity: 50%;
     background-color: #8400ff;
 }
-#profile {
-    display: inline;
-    position: relative;
-    float: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    opacity: 100%;
-    color:white;
-}
 #mo-box {
-    height: 40px;
-    width: auto;
-    opacity: 50%;
     background-color: #ff00ea;
 }
-#more {
-    display: inline;
-    position: relative;
+.void {
     float: left;
+    position: relative;
+    width: 15%;
+    height: 538px;
+    background-color: #000000;
+    opacity: 50%;
+}
+#video-content {
+    float: left;
+    position: relative;
+    width: 40%;
+    height: 538px;
+    background-color: #ffffff;
+    opacity: 90%;
+}
+.option-container {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
     font-weight: bold;
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid#cfcfcf;
+    float: center;
+    width: 96.7%;
+    height: 5%;
+    background-color: #ffffff;
+}
+#for-youB {
+    color: #FE2C55;
+    float: left;
+    margin-left: 20%;
+}
+#shop {
+    color: #FE2C55;
+    float: right;
+    margin-right: 30%;
+}
+#video-container {
+    text-align: center;
+    margin-right: 40px;
+}
+#button-container {
+    margin-top: 375px;
+    float: right;
+    position: relative;
+    width: 10px;
+}
+.react-buttons {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+#blank-right {
+    width: 30%;
+}
+#swipe-buttons {
+    float: right;
+    position: relative;
+    width: 40px;
+    height: 538px;
     opacity: 100%;
-    color:white;
+    margin-top: 140px;
+}
+.swipe {
+    background-color: #ffffff;
+    border: 2px solid #cfcfcf;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+    float: right;
 }
 /*footer*/
 #w-footer {
