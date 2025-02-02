@@ -48,50 +48,38 @@
                     <a id="shop" href="" target="_self">Shop</a>
                 </div>
                 <div id="video-container">
+                    <div id="tiktok">
+                        <iframe id="video"
+                        src="https://www.tiktok.com/embed/7461789922513423647?autoplay=1&controls=0">
+                        </iframe>
+                    </div>
                     <!-- CD: w3schools -->
-                    <iframe width="540" height="475"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1"&controls=0&autoplay=1">
-                    </iframe>
-                    <div id="button-container">
-                        <button id="likes" class="react-buttons">
-                            <img id="up" src="">
-                            <p id="like-count"></p>
+                     <div id="video-coverA"></div>
+                     <div id="video-coverB"></div>
+                     <div id="video-coverC"></div>
+                    <div class="button-container">
+                        <button id="favorites" class="react-buttons">
+                            <p id="heart" class="symbol">🖤</p>
                         </button>
+                        <p id="fav-count" class="stats">0</p>
                         <button id="comments" class="react-buttons">
-                            <img id="bubble" src="">
-                            <p id="com-count"></p>
+                            <p id="bubble" class="symbol">💬</p>
+                        </button>
+                        <p id="com-count" class="stats">0</p>
+                    </div>
+                    <div id="swipe-buttons">
+                        <button id="prev" class="swipe">
+                            <p id="left-arrow">⬅️</p>
+                        </button>
+                        <button id="next" class="swipe">
+                            <p id="right-arrow">➡️</p>
                         </button>
                     </div>
                 </div>
             </div>
             <div id="blank-right" class="void">
-                <div id="swipe-buttons">
-                    <button id="prev" class="swipe"></button>
-                    <button id="next" class="swipe"></button>
-                </div>
             </div>
         </div>
         <script src="tiktoktiktok.js" type="module"></script>
     </body>
-    <footer>
-        <div id="w-footer"></div>
-        <div id="b-footer">
-          <div id="box">
-            <!-- CD: 3schools -->
-            <div id='google_translate_element'></div>
-            <script>
-            function googleTranslateElementInit() {
-              new google.translate.TranslateElement({
-              pageLanguage: 'en',
-              autoDisplay: 'true',
-              layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL
-              }, 'google_translate_element');
-            }
-            </script>
-            <script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
-            <!-- CD: 3schools -->
-          </div>
-          <p id="trademark">© 2025 TikTok TikTok</p>
-        </div>
-    </footer>
 </html>
